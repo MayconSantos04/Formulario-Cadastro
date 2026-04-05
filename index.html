@@ -31,10 +31,55 @@
         <aside>
             <div class="aside-container">
                 <h2>Crie seu convite</h2>
-                <div class="name-icones">
-                    <img class="imgIcons" src="/assets/icons/calendar.svg" alt="calendar">
-                    <h4>Sobre o evento</h4>
-                </div>
+
+                <form>
+                    <fieldset class="child-infor">
+
+                        <legend class="name-icones">
+                            <img class="imgIcons" src="/assets/icons/calendar.svg" alt="calendar">
+                            <h4>Sobre o evento</h4>
+                        </legend>
+
+                        <div class="input-wrapper">
+                            <label for="fullName">Título</label>
+                            <input id="fullName" type="text" placeholder="Nome do evento">
+                        </div>
+
+                        <div class="flex">
+
+                            <div class="input-wrapper">
+                                <label for="birth">Início</label>
+                                <input type="date" id="birth" lang="pt-BR">
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="button">Fim</label>
+                                <input type="date" id="button" lang="pt-BR">
+                            </div>
+
+                        </div>
+                        <div class="flex">
+
+                            <div class="input-wrapper">
+                                <label for="end">Tipo</label>
+                                <input type="text" id="end" lang="pt-BR">
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="location">Local</label>
+                                <input type="text" id="location" lang="pt-BR" placeholder="Link ou endereço">
+                            </div>
+
+                        </div>
+
+                        <div class="textarea-wrapper">
+                            <label for="description">Descrição</label>
+                            <textarea name="description" id="description"
+                                placeholder="Escreva sobre os detalhes do evento" rows="10"></textarea>
+                        </div>
+
+                    </fieldset>
+                </form>
             </div>
         </aside>
     </div>

@@ -37,6 +37,7 @@ main {
 }
 
 aside {
+
     padding: 80px;
     background-color: var(--shape-body);
 
@@ -56,6 +57,78 @@ aside {
         & .imgIcons {
             height: 24px;
             width: 24px;
+        }
+    }
+
+    & form {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+
+        & fieldset {
+            border: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        & .input-wrapper,
+        .textarea-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin: 0 32px 0 0;
+
+            & label {
+                font-family: var(--font-Open);
+                font-size: 14px;
+                color: var(--text-body);
+                margin-top: 24px;
+            }
+        }
+
+        & input,
+        textarea {
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid var(--input-stroke);
+            padding: 16px;
+            color: var(--text-heading);
+            background-color: var(--input-base);
+            font-family: var(--font-Open);
+            margin-right: 20px;
+
+            &::placeholder {
+                color: var(--input-placeholder);
+            }
+        }
+
+        input[type="date"] {
+            text-transform: uppercase;
+            font-family: var(--font-Open);
+            color: var(--input-placeholder);
+        }
+
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            display: none;
+            -webkit-appearance: none;
+        }
+
+        input[type="date"]::-webkit-inner-spin-button,
+        input[type="date"]::-webkit-clear-button {
+            display: none;
+            -webkit-appearance: none;
+        }
+
+        & textarea {
+            resize: none;
+        }
+
+        & .flex {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
         }
     }
 }
