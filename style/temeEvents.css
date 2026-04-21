@@ -1,0 +1,31 @@
+.temeEvents {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+
+    .temeEvent {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--input-stroke);
+        padding: 8px;
+        border-radius: 8px;
+        border: 2px solid transparent;
+
+        .temeEvent img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        p {
+            text-align: center;
+            margin: 8px 8px 0 8px;
+        }
+    }
+
+    .temeEvent:hover {
+        border: 2px solid var(--brand-light);
+        cursor: pointer;
+    }
+}

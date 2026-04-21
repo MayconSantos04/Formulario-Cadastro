@@ -1,88 +1,202 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulário de Convite</title>
-    <link rel="stylesheet" href="/style/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="/style/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <div id="app">
-        <main>
-            <div class="main-container">
-                <img src="/assets/Logo.svg" alt="">
-                <h1>Festivite</h1>
-                <h3>Crie um convite digital para o seu evento</h3>
-            </div>
-        </main>
+      <main>
+        <div class="main-container">
+          <img src="/assets/Logo.svg" alt="" />
+          <h1>Festivite</h1>
+          <h3>Crie um convite digital para o seu evento</h3>
+        </div>
+      </main>
 
-        <aside>
-            <div class="aside-container">
-                <h2>Crie seu convite</h2>
+      <aside>
+        <div class="aside-container">
+          <h2>Crie seu convite</h2>
 
-                <form>
-                    <fieldset class="child-infor">
+          <form>
+            <fieldset class="child-infor">
+              <legend class="name-icones">
+                <img
+                  class="imgIcons"
+                  src="/assets/icons/calendar.svg"
+                  alt="calendar"
+                />
+                <h4>Sobre o evento</h4>
+              </legend>
 
-                        <legend class="name-icones">
-                            <img class="imgIcons" src="/assets/icons/calendar.svg" alt="calendar">
-                            <h4>Sobre o evento</h4>
-                        </legend>
+              <div class="input-wrapper">
+                <label for="fullName">Título</label>
+                <input id="fullName" type="text" placeholder="Nome do evento" />
+              </div>
 
-                        <div class="input-wrapper">
-                            <label for="fullName">Título</label>
-                            <input id="fullName" type="text" placeholder="Nome do evento">
-                        </div>
+              <div class="flex">
+                <div class="input-wrapper">
+                  <label for="birth">Início</label>
+                  <input type="date" id="birth" lang="pt-BR" />
+                </div>
 
-                        <div class="flex">
+                <div class="input-wrapper">
+                  <label for="button">Fim</label>
+                  <input type="date" id="button" lang="pt-BR" />
+                </div>
+              </div>
+              <div class="flex">
+                <div class="input-wrapper">
+                  <label for="end">Tipo</label>
+                  <input type="text" id="end" lang="pt-BR" />
+                </div>
 
-                            <div class="input-wrapper">
-                                <label for="birth">Início</label>
-                                <input type="date" id="birth" lang="pt-BR">
-                            </div>
+                <div class="input-wrapper">
+                  <label for="location">Local</label>
+                  <input
+                    type="text"
+                    id="location"
+                    lang="pt-BR"
+                    placeholder="Link ou endereço"
+                  />
+                </div>
+              </div>
 
-                            <div class="input-wrapper">
-                                <label for="button">Fim</label>
-                                <input type="date" id="button" lang="pt-BR">
-                            </div>
+              <div class="textarea-wrapper">
+                <label for="description">Descrição</label>
+                <textarea
+                  name="description"
+                  id="description"
+                  placeholder="Escreva sobre os detalhes do evento"
+                  rows="10"
+                ></textarea>
+              </div>
 
-                        </div>
-                        <div class="flex">
+              <div class="aboutEvent">
+                <legend class="name-icones">
+                  <img
+                    class="imgIcons"
+                    src="/assets/icons/paintbrush-vertical.svg"
+                    alt="calendar"
+                  />
+                  <h4>Sobre o evento</h4>
+                </legend>
 
-                            <div class="input-wrapper">
-                                <label for="end">Tipo</label>
-                                <input type="text" id="end" lang="pt-BR">
-                            </div>
+                <p>Cor principal</p>
 
-                            <div class="input-wrapper">
-                                <label for="location">Local</label>
-                                <input type="text" id="location" lang="pt-BR" placeholder="Link ou endereço">
-                            </div>
+                <div id="options">
+                  <input type="radio" id="color1" name="color" />
+                  <label for="color1" class="color c1"></label>
 
-                        </div>
+                  <input type="radio" id="color2" name="color" />
+                  <label for="color2" class="color c2"></label>
 
-                        <div class="textarea-wrapper">
-                            <label for="description">Descrição</label>
-                            <textarea name="description" id="description"
-                                placeholder="Escreva sobre os detalhes do evento" rows="10"></textarea>
-                        </div>
+                  <input type="radio" id="color3" name="color" />
+                  <label for="color3" class="color c3"></label>
 
-                    </fieldset>
-                </form>
-            </div>
-        </aside>
+                  <input type="radio" id="color4" name="color" />
+                  <label for="color4" class="color c4"></label>
+
+                  <input type="radio" id="color5" name="color" />
+                  <label for="color5" class="color c5"></label>
+
+                  <input type="radio" id="color6" name="color" />
+                  <label for="color6" class="color c6"></label>
+
+                  <input type="radio" id="color7" name="color" />
+                  <label for="color7" class="color c7"></label>
+
+                  <input type="radio" id="color8" name="color" />
+                  <label for="color8" class="color c8"></label>
+
+                  <input type="radio" id="color9" name="color" />
+                  <label for="color9" class="color c9"></label>
+
+                  <input type="radio" id="color10" name="color" />
+                  <label for="color10" class="color c10"></label>
+
+                  <input type="radio" id="color11" name="color" />
+                  <label for="color11" class="color c11"></label>
+                </div>
+
+                <p>Tema do evento</p>
+
+                <div class="temeEvents">
+                  <div class="temeEvent">
+                    <img src="/assets/Image.png" alt="image">
+                    <p>Aniversário</p>
+                  </div>
+                  <div class="temeEvent">
+                    <img src="/assets/Image-1.png" alt="image">
+                    <p>Infantil</p>
+                  </div>
+                  <div class="temeEvent">
+                    <img src="/assets/Image-2.png" alt="image">
+                    <p>Formatura</p>
+                  </div>
+                  <div class="temeEvent">
+                    <img src="/assets/Image-3.png" alt="image">
+                    <p>Casamento</p>
+                  </div>
+                  <div class="temeEvent">
+                    <img src="/assets/Image-4.png" alt="image">
+                    <p>Chá de bebê</p>
+                  </div>
+                  <div class="temeEvent">
+                    <img src="/assets/Image-5.png" alt="image">
+                    <p>Chá de panela</p>
+                  </div>
+                  <div class="temeEvent">
+                    <img src="/assets/Image-6.png" alt="image">
+                    <p>Carnaval</p>
+                  </div>
+                  <div class="temeEvent">
+                    <img src="/assets/Image-7.png" alt="image">
+                    <p>Páscoa</p>
+                  </div>
+                  <div class="temeEvent">
+                    <img src="/assets/Image-8.png" alt="image">
+                    <p>São João</p>
+                  </div>
+                  <div class="temeEvent">
+                    <img src="/assets/Image-9.png" alt="image">
+                    <p>Halloween</p>
+                  </div>
+                  <div class="temeEvent">
+                    <img src="/assets/Image-10.png" alt="image">
+                    <p>Natal</p>
+                  </div>
+                  <div class="temeEvent">
+                    <img src="/assets/Image-11.png" alt="image">
+                    <p>Outro</p>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </aside>
     </div>
-</body>
-
+  </body>
 </html>

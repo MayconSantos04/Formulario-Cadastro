@@ -1,0 +1,78 @@
+.aboutEvent {
+    margin-top: 48px;
+}
+
+#options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-color {
+    margin: 0;
+    padding: 0;
+}
+
+#options input[type="radio"] {
+    display: none;
+}
+
+.color {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 8px solid var(--shape-button);
+}
+
+
+.c1 {
+    background: var(--brand-light);
+}
+
+.c2 {
+    background: var(--navy);
+}
+
+.c3 {
+    background: var(--purple);
+}
+
+.c4 {
+    background: var(--fuschia);
+}
+
+.c5 {
+    background: var(--pink);
+}
+
+.c6 {
+    background: var(--danger);
+}
+
+.c7 {
+    background: var(--orange);
+}
+
+.c8 {
+    background: var(--yellow);
+}
+
+.c9 {
+    background: var(--lime);
+}
+
+.c10 {
+    background: var(--green);
+}
+
+.c11 {
+    background: var(--cyan);
+}
+
+.color:hover {
+    box-shadow: 0 0 0 3px var(--brand-light);
+}
+
+#options input[type="radio"]:checked + .color {
+    box-shadow: 0 0 0 3px var(--brand-dark);
+}

@@ -12,6 +12,8 @@
     --Bold-Baloo: Bold;
     --Bold-Body: Bold;
 
+    --color-primary: #FFFFFF;
+
     --brand-light: #59B2FF;
     --brand-mid: #3487CF;
     --brand-dark: #1D6FB6;
@@ -41,6 +43,10 @@
     --text-heading: #F9F9F9;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -56,3 +62,9 @@ h4 {
     margin: 0;
 }
 
+p {
+    font-family: var(--font-Open);
+    font-size: var(--Body-sm);
+    color: var(--color-primary);
+    margin: 24px 0 24px 0;
+}
