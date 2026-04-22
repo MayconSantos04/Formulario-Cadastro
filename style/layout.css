@@ -3,6 +3,9 @@
     grid-template-columns: 33% 67%;
     height: 100vh;
     overflow: hidden;
+    padding: 20px;
+    gap: 20px;
+    background-color: var(--shape-background);
 }
 
 main {
@@ -12,6 +15,7 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 12px;
 
     & .main-container img {
         height: 48px;

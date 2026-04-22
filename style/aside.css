@@ -2,6 +2,7 @@ aside {
     padding: 80px 130px 0 130px;
     background-color: var(--shape-body);
     overflow-y: auto;
+    border-radius: 12px;
 
     & h2 {
         font-family: var(--font-Baloo);
