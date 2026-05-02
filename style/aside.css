@@ -41,7 +41,6 @@ aside {
             display: flex;
             flex-direction: column;
             gap: 8px;
-            margin: 0 32px 0 0;
 
             & label {
                 font-family: var(--font-Open);
@@ -60,10 +59,14 @@ aside {
             color: var(--text-heading);
             background-color: var(--input-base);
             font-family: var(--font-Open);
-            margin-right: 20px;
 
             &::placeholder {
                 color: var(--input-placeholder);
+            }
+
+            &:focus {
+                outline: none;
+                border-color: var(--brand-light);
             }
         }
 
@@ -91,6 +94,7 @@ aside {
         & .flex {
             display: grid;
             grid-template-columns: 1fr 1fr;
+            align-items: center;
             gap: 16px;
         }
     }

@@ -56,9 +56,28 @@
                             </div>
                         </div>
                         <div class="flex">
-                            <div class="input-wrapper">
-                                <label for="end">Tipo</label>
-                                <input type="text" id="end" lang="pt-BR" />
+                            <div class="input-button">
+                                <p class="label-title title-button">Tipo</p>
+
+                                <div class="toggle-wrapper">
+
+                                    <label class="switch-select">
+                                        <input type="checkbox">
+                                        <span class="slider-select"></span>
+
+                                        <div class="names-buttons">
+                                            <div class="name-button">
+                                                <img src="/assets/icons/building-2.svg" alt="building">
+                                                Escuro
+                                            </div>
+                                            <div class="name-button">
+                                                <img src="/assets/icons/video.svg" alt="building">
+                                                Claro
+                                            </div>
+                                        </div>
+                                    </label>
+
+                                </div>
                             </div>
 
                             <div class="input-wrapper">
@@ -76,7 +95,7 @@
                         <div class="aboutEvent">
                             <legend class="name-icones">
                                 <img class="imgIcons" src="/assets/icons/paintbrush-vertical.svg" alt="calendar" />
-                                <h4>Sobre o evento</h4>
+                                <h4>Personalização</h4>
                             </legend>
 
                             <p>Cor principal</p>
@@ -204,27 +223,53 @@
 
                             </div>
 
-                            <legend class="name-icones">
-                                <img class="imgIcons" src="/assets/icons/contact.svg" alt="calendar" />
-                                <h4>Dados para contato</h4>
-                            </legend>
-
-                            <div class="input-wrapper">
-                                <label for="fullName">Nome</label>
-                                <input id="fullName" type="text" placeholder="Nome completo" />
-                            </div>
-
-                            <div class="flex">
-                                <div class="input-wrapper">
-                                    <label for="birth">E-mail</label>
-                                    <input type="email" id="birth" placeholder="exemplo@email.com"/>
-                                </div>
+                            <div class="date-contacts">
+                                <legend class="name-icones">
+                                    <img class="imgIcons" src="/assets/icons/contact.svg" alt="calendar" />
+                                    <h4>Dados para contato</h4>
+                                </legend>
 
                                 <div class="input-wrapper">
-                                    <label for="button">Telefone</label>
-                                    <input type="number" id="button" placeholder="(99) 99999-9999"/>
+                                    <label for="fullName">Nome</label>
+                                    <input id="fullName" type="text" placeholder="Nome completo" />
+                                </div>
+
+                                <div class="flex">
+                                    <div class="input-wrapper">
+                                        <label for="birth">E-mail</label>
+                                        <input type="email" id="birth" placeholder="exemplo@email.com" />
+                                    </div>
+
+                                    <div class="input-wrapper">
+                                        <label for="button">Telefone</label>
+                                        <input type="number" id="button" placeholder="(99) 99999-9999" />
+                                    </div>
                                 </div>
                             </div>
+
+                            <div class="terms">
+                                <div class="term">
+                                    <input id="term1" type="checkbox">
+                                    <label for="term1">Li e concordo com os <a href="#">Termos e Condições</a> e com a
+                                        <a href="#">Política de
+                                            Privacidade</a></label>
+                                </div>
+                                <div class="term">
+                                    <input id="term2" type="checkbox">
+                                    <label for="term2">Aceito receber atualizações e promoções por e-mail</label>
+                                </div>
+                                <div class="term">
+                                    <input id="term3" type="checkbox">
+                                    <label for="term3">Aceito receber atualizações e promoções por SMS</label>
+                                </div>
+
+                            </div>
+
+                            <button type="submit" class="submit-button">
+                                <img src="/assets/icons/ticket.svg" alt="ticket">
+                                Gerar convite
+                            </button>
+
                     </fieldset>
                 </form>
             </div>

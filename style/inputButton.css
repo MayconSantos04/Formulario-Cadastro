@@ -43,6 +43,91 @@
     gap: 10px;
 }
 
+.switch-select {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: var(--input-base);
+    border: 1px solid var(--input-stroke);
+    border-radius: 8px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    padding: 4px;
+
+    position: relative;
+
+    transition: 1s;
+}
+
+.names-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 clamp(12px, 5vw, 50px);
+
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+    z-index: 2;
+}
+
+.name-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    color: var(--text-heading);
+    font-size: var(--Body-sm);
+
+    transition: transform 0.2s ease;
+
+    img {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.switch-select input {
+    display: none;
+}
+
+.slider-select {
+    width: 50%;
+    height: 40px;
+    background-color: var(--input-stroke);
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.title-button {
+    margin: 24px 0 0 0;
+}
+
+.switch-select input:checked+.slider-select {
+    transform: translateX(100%);
+}
+
+.name-button img {
+    filter: grayscale(100%) brightness(0.6);
+    transition: filter 0.2s ease;
+}
+
+.switch-select input:not(:checked)~.names-buttons .name-button:first-child img,
+.switch-select input:checked~.names-buttons .name-button:last-child img {
+    filter: none;
+}
+
+.switch-select input:not(:checked)~.names-buttons .name-button:first-child,
+.switch-select input:checked~.names-buttons .name-button:last-child {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
 .switch {
     position: relative;
     width: 64px;

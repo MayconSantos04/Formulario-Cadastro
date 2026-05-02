@@ -28,4 +28,9 @@
         border: 2px solid var(--brand-light);
         cursor: pointer;
     }
+
+    .temeEvent:checked {
+        border: 2px solid var(--brand-light);
+        cursor: pointer;
+    }
 }
